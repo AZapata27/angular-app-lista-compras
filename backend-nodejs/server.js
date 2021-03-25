@@ -18,7 +18,6 @@ app.get('/items', async (req, res) => {
     res.json(items);
 });
 app.get('/items/:id', (req, res) => {
-    res.send(`${req.params.id}`);
 });
 app.put('/items/:id', async (req, res) => {
     const id = req.params.id;

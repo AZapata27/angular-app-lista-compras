@@ -8,7 +8,7 @@ import {HttpClient} from '@angular/common/http'
 })
 export class ItemService {
 
-  url: string='http://localhost:3001/items';
+  url: string='https://prueba-apinode.herokuapp.com/items';
   httpOptions={
     headers:{
       'Content-Type' : 'application/json'
