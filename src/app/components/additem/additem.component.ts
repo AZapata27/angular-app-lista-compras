@@ -27,8 +27,12 @@ export class AdditemComponent implements OnInit {
     item.price= this.price;
     item.quantity= this.quantity;
     item.completed= false
-    this.itemService.addItem(item);
-    this.router.navigate(['/'])
+    //this.itemService.addItem(item);
+    this.itemService.addItem(item).subscribe( item =>{
+      
+      this.router.navigate(['/'])
+    })
+    
   }
 
   
