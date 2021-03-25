@@ -6,36 +6,40 @@ import {Item} from '../models/item';
 })
 export class ItemService {
 
+  items:Item[]=[
+    {
+    id:0,
+    title:'manzana',
+    price: 10.5,
+    quantity: 4,
+    completed: false
+    },
+    {
+      id:1,
+    title:'pan',
+    price: 3.5,
+    quantity: 8,
+    completed: true
+    },
+    {
+      id:2,
+    title:'queso',
+    price: 5,
+    quantity: 2,
+    completed: false
+    }];
+
   constructor() { }
 
   getItems(){
-    return [
-      {
-      id:0,
-      title:'manzana',
-      price: 10.5,
-      quantity: 4,
-      completed: false
-      },
-      {
-        id:1,
-      title:'pan',
-      price: 3.5,
-      quantity: 8,
-      completed: true
-      },
-      {
-        id:2,
-      title:'queso',
-      price: 5,
-      quantity: 2,
-      completed: false
-      }]
+    return this.items;
   }
 
 
 
   addItem(item: Item){
+
+    this.items.unshift(item);
 
 
   }
