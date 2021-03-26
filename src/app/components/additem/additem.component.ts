@@ -10,6 +10,7 @@ import { ItemService } from 'src/app/services/item.service';
 })
 export class AdditemComponent implements OnInit {
 
+  
   id: number=0;
   title: string ='';
   price: number=0;
