@@ -4,9 +4,9 @@ heroku: https://prueba-apinode.herokuapp.com/
 
 -Desarrollo de un CRUD en Angular implementando una lista de compras hosteada en github pages
 
--y con una api en Express y Nodejs hosteada en Heroku
+y con una api en Express y Nodejs hosteada en Heroku
 
--la cual es consumida por la app de angular
+la cual es consumida por la app de angular
 
 
 
